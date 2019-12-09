@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header.js';
 import './ShowSubscribers.css';
+import { Link } from 'react-router-dom';
 
 class ShowSubscribers extends Component {
 
@@ -21,7 +22,9 @@ render() {
             <span className="grid-item phone-heading">Phone</span>
 
             <span className="grid-item action-btn-container">
-            <button className="custom-btn delete-btn">Delete</button>
+            <Link to="/add">
+            <button className="custom-btn add-btn">Add</button>
+          </Link>
           </span>
 
           </div>
