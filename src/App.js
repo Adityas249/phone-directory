@@ -1,14 +1,12 @@
 import React from 'react';
+import Header from './Header.js';
 
-
-function App() {
+class App extends Component 
   render() {
   return (
  <div>
+<header/>
 
-<div className="header">
-          Phone Directory
-        </div>
         <button>Add</button>
         <div>
           <span>Name</span><br />
