@@ -7,6 +7,11 @@ class ShowSubscribers extends Component {
 
 
 render() {
+  onDeletedClick = (subscriberId) => {
+    this.props.deleteSubscriberHandler(subscriberId); 
+  }
+  render() {
+    
 
 
   return (
@@ -23,7 +28,8 @@ render() {
 
             <span className="grid-item action-btn-container">
             <Link to="/add">
-            <button className="custom-btn add-btn">Add</button>
+            <button className="custom-btn delete-btn" onClick={this.onDeletedClick.bind(this, sub.id)}>Delete</button>
+
           </Link>
           </span>
 
